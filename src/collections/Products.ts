@@ -66,7 +66,7 @@ export const Products: CollectionConfig = {
       },
     },
     {
-      name: 'isNew',
+      name: 'newArrival',
       type: 'checkbox',
       defaultValue: false,
       label: 'New Arrival',
