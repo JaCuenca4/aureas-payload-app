@@ -11,25 +11,28 @@ export const HeroBlock: Block = {
       name: 'heading',
       type: 'text',
       required: true,
+      label: 'Título',
     },
     {
       name: 'subheading',
       type: 'text',
+      label: 'Subtítulo',
     },
     {
       name: 'image',
       type: 'upload',
       relationTo: 'media',
+      label: 'Imagen',
     },
     {
       name: 'ctaLabel',
       type: 'text',
-      label: 'CTA Button Label',
+      label: 'Texto del Botón',
     },
     {
       name: 'ctaLink',
       type: 'text',
-      label: 'CTA Button Link',
+      label: 'Enlace del Botón',
     },
   ],
 }

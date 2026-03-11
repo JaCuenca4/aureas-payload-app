@@ -3,6 +3,10 @@ import { isAdmin, isPublic } from '../access'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',
+  labels: {
+    singular: 'Categoría',
+    plural: 'Categorías',
+  },
   admin: {
     useAsTitle: 'name',
     defaultColumns: ['name', 'slug', 'parent'],
@@ -18,6 +22,7 @@ export const Categories: CollectionConfig = {
       name: 'name',
       type: 'text',
       required: true,
+      label: 'Nombre',
     },
     {
       name: 'slug',
@@ -31,16 +36,19 @@ export const Categories: CollectionConfig = {
     {
       name: 'description',
       type: 'textarea',
+      label: 'Descripción',
     },
     {
       name: 'image',
       type: 'upload',
       relationTo: 'media',
+      label: 'Imagen',
     },
     {
       name: 'parent',
       type: 'relationship',
       relationTo: 'categories',
+      label: 'Categoría Padre',
       admin: {
         position: 'sidebar',
       },

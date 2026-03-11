@@ -20,6 +20,9 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
+  i18n: {
+    fallbackLanguage: 'es',
+  },
   admin: {
     user: Users.slug,
     importMap: {

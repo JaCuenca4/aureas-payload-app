@@ -3,14 +3,15 @@ import type { Block } from 'payload'
 export const FeaturedProductsBlock: Block = {
   slug: 'featuredProducts',
   labels: {
-    singular: 'Featured Products',
-    plural: 'Featured Products',
+    singular: 'Productos Destacados',
+    plural: 'Productos Destacados',
   },
   fields: [
     {
       name: 'heading',
       type: 'text',
       required: true,
+      label: 'Título',
     },
     {
       name: 'products',
@@ -20,6 +21,7 @@ export const FeaturedProductsBlock: Block = {
       required: true,
       minRows: 1,
       maxRows: 12,
+      label: 'Productos',
     },
   ],
 }

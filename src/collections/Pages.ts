@@ -7,6 +7,10 @@ import { CTABlock } from '../blocks/CTABlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
+  labels: {
+    singular: 'Página',
+    plural: 'Páginas',
+  },
   admin: {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'status', 'updatedAt'],
@@ -22,6 +26,7 @@ export const Pages: CollectionConfig = {
       name: 'title',
       type: 'text',
       required: true,
+      label: 'Título',
     },
     {
       name: 'slug',
@@ -36,9 +41,10 @@ export const Pages: CollectionConfig = {
       name: 'status',
       type: 'select',
       defaultValue: 'draft',
+      label: 'Estado',
       options: [
-        { label: 'Draft', value: 'draft' },
-        { label: 'Published', value: 'published' },
+        { label: 'Borrador', value: 'draft' },
+        { label: 'Publicado', value: 'published' },
       ],
       admin: {
         position: 'sidebar',
@@ -47,6 +53,7 @@ export const Pages: CollectionConfig = {
     {
       name: 'layout',
       type: 'blocks',
+      label: 'Contenido',
       blocks: [HeroBlock, ContentBlock, FeaturedProductsBlock, CTABlock],
     },
     {
@@ -60,12 +67,12 @@ export const Pages: CollectionConfig = {
         {
           name: 'title',
           type: 'text',
-          label: 'Meta Title',
+          label: 'Título SEO',
         },
         {
           name: 'description',
           type: 'textarea',
-          label: 'Meta Description',
+          label: 'Descripción SEO',
         },
       ],
     },

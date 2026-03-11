@@ -1,5 +1,16 @@
 import React from 'react'
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => children
+export const metadata = {
+  title: 'Palea EC — Admin',
+}
+
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
+  <html lang="es">
+    <head>
+      <meta charSet="utf-8" />
+    </head>
+    <body>{children}</body>
+  </html>
+)
 
 export default RootLayout

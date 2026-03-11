@@ -3,6 +3,10 @@ import { isAdmin, isPublishedOrAdmin } from '../access'
 
 export const Products: CollectionConfig = {
   slug: 'products',
+  labels: {
+    singular: 'Producto',
+    plural: 'Productos',
+  },
   admin: {
     useAsTitle: 'name',
     defaultColumns: ['name', 'price', 'category', 'status'],
@@ -18,6 +22,7 @@ export const Products: CollectionConfig = {
       name: 'name',
       type: 'text',
       required: true,
+      label: 'Nombre',
     },
     {
       name: 'slug',
@@ -31,18 +36,21 @@ export const Products: CollectionConfig = {
     {
       name: 'description',
       type: 'textarea',
+      label: 'Descripción',
     },
     {
       name: 'price',
       type: 'number',
       required: true,
       min: 0,
+      label: 'Precio',
     },
     {
       name: 'inventory',
       type: 'number',
       defaultValue: 0,
       min: 0,
+      label: 'Inventario',
       admin: {
         position: 'sidebar',
       },
@@ -50,17 +58,20 @@ export const Products: CollectionConfig = {
     {
       name: 'material',
       type: 'text',
+      label: 'Material',
     },
     {
       name: 'images',
       type: 'upload',
       relationTo: 'media',
       hasMany: true,
+      label: 'Imágenes',
     },
     {
       name: 'category',
       type: 'relationship',
       relationTo: 'categories',
+      label: 'Categoría',
       admin: {
         position: 'sidebar',
       },
@@ -69,7 +80,7 @@ export const Products: CollectionConfig = {
       name: 'newArrival',
       type: 'checkbox',
       defaultValue: false,
-      label: 'New Arrival',
+      label: 'Nuevo',
       admin: {
         position: 'sidebar',
       },
@@ -78,7 +89,7 @@ export const Products: CollectionConfig = {
       name: 'isFeatured',
       type: 'checkbox',
       defaultValue: false,
-      label: 'Featured Product',
+      label: 'Destacado',
       admin: {
         position: 'sidebar',
       },
@@ -87,9 +98,10 @@ export const Products: CollectionConfig = {
       name: 'status',
       type: 'select',
       defaultValue: 'draft',
+      label: 'Estado',
       options: [
-        { label: 'Draft', value: 'draft' },
-        { label: 'Published', value: 'published' },
+        { label: 'Borrador', value: 'draft' },
+        { label: 'Publicado', value: 'published' },
       ],
       admin: {
         position: 'sidebar',
@@ -99,17 +111,17 @@ export const Products: CollectionConfig = {
       type: 'tabs',
       tabs: [
         {
-          label: 'Details',
+          label: 'Detalles',
           fields: [
             {
               name: 'deliveryInfo',
               type: 'richText',
-              label: 'Delivery Information',
+              label: 'Información de Envío',
             },
             {
               name: 'guaranteeInfo',
               type: 'richText',
-              label: 'Guarantee Information',
+              label: 'Información de Garantía',
             },
           ],
         },
