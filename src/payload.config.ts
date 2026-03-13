@@ -44,7 +44,11 @@ export default buildConfig({
   plugins: [
     s3Storage({
       collections: {
-        media: true,
+        media: {
+          generateFileURL: ({ filename: name }) => {
+            return `${process.env.R2_PUBLIC_URL}/${name}`
+          },
+        },
       },
       bucket: process.env.R2_BUCKET || '',
       config: {
