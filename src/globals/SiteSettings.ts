@@ -42,7 +42,8 @@ export const SiteSettings: GlobalConfig = {
         plural: 'Slides',
       },
       admin: {
-        description: 'Imágenes de fondo y productos destacados para el carrusel del hero en la página de inicio.',
+        description:
+          'Imágenes de fondo y productos destacados para el carrusel del hero en la página de inicio.',
       },
       fields: [
         {
@@ -59,7 +60,8 @@ export const SiteSettings: GlobalConfig = {
           required: true,
           label: 'Producto Destacado',
           admin: {
-            description: 'El producto que se mostrará en la tarjeta del slide.',
+            description:
+              'El producto que se mostrará en la tarjeta del slide.',
           },
         },
       ],
