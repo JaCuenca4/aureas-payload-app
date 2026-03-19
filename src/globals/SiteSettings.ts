@@ -33,5 +33,38 @@ export const SiteSettings: GlobalConfig = {
       relationTo: 'media',
       label: 'Favicon',
     },
+    {
+      name: 'heroSlides',
+      type: 'array',
+      label: 'Slides del Hero',
+      labels: {
+        singular: 'Slide',
+        plural: 'Slides',
+      },
+      admin: {
+        description:
+          'Imágenes de fondo y productos destacados para el carrusel del hero en la página de inicio.',
+      },
+      fields: [
+        {
+          name: 'bgImage',
+          type: 'upload',
+          relationTo: 'media',
+          required: true,
+          label: 'Imagen de Fondo',
+        },
+        {
+          name: 'product',
+          type: 'relationship',
+          relationTo: 'products',
+          required: true,
+          label: 'Producto Destacado',
+          admin: {
+            description:
+              'El producto que se mostrará en la tarjeta del slide.',
+          },
+        },
+      ],
+    },
   ],
 }
