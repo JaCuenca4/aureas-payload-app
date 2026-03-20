@@ -4,6 +4,13 @@ import { HeroBlock } from '../blocks/HeroBlock'
 import { ContentBlock } from '../blocks/ContentBlock'
 import { FeaturedProductsBlock } from '../blocks/FeaturedProductsBlock'
 import { CTABlock } from '../blocks/CTABlock'
+import { HomeHeroBlock } from '../blocks/HomeHeroBlock'
+import { NewArrivalsBlock } from '../blocks/NewArrivalsBlock'
+import { CollectionsBannerBlock } from '../blocks/CollectionsBannerBlock'
+import { BrandStoryBlock } from '../blocks/BrandStoryBlock'
+import { ExperienceBlock } from '../blocks/ExperienceBlock'
+import { ContactHeroBlock } from '../blocks/ContactHeroBlock'
+import { ContactFormBlock } from '../blocks/ContactFormBlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -51,10 +58,22 @@ export const Pages: CollectionConfig = {
       },
     },
     {
-      name: 'layout',
+      name: 'pageBuilder',
       type: 'blocks',
-      label: 'Contenido',
-      blocks: [HeroBlock, ContentBlock, FeaturedProductsBlock, CTABlock],
+      label: 'Constructor de Página',
+      blocks: [
+        HomeHeroBlock,
+        NewArrivalsBlock,
+        CollectionsBannerBlock,
+        BrandStoryBlock,
+        ExperienceBlock,
+        ContactHeroBlock,
+        ContactFormBlock,
+        HeroBlock,
+        ContentBlock,
+        FeaturedProductsBlock,
+        CTABlock,
+      ],
     },
     {
       name: 'meta',
