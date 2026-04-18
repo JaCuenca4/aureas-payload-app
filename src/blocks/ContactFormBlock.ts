@@ -50,7 +50,7 @@ export const ContactFormBlock: Block = {
           name: 'email',
           type: 'text',
           label: 'Correo Electrónico',
-          defaultValue: 'hello@palea.ec',
+          defaultValue: 'hello@aurea-s.com',
         },
         {
           name: 'hours',

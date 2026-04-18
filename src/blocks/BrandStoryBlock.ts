@@ -12,7 +12,7 @@ export const BrandStoryBlock: Block = {
       type: 'text',
       label: 'Título',
       required: true,
-      defaultValue: 'Palea — Donde la Elegancia Se Encuentra con el Alma.',
+      defaultValue: 'Aurea-S — Donde la Elegancia Se Encuentra con el Alma.',
     },
     {
       name: 'body',

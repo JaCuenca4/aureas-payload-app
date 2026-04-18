@@ -13,7 +13,7 @@ export const SiteSettings: GlobalConfig = {
       name: 'siteName',
       type: 'text',
       required: true,
-      defaultValue: 'Palea EC',
+      defaultValue: 'Aurea-S',
       label: 'Nombre del Sitio',
     },
     {

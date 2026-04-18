@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const metadata = {
-  title: 'Palea EC — Admin',
+  title: 'Aurea-S — Admin',
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
