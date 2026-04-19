@@ -12,6 +12,7 @@ export const CollectionsHeroBlock: Block = {
       type: 'text',
       label: 'Badge',
       defaultValue: 'Curated Excellence',
+      localized: true,
     },
     {
       name: 'title',
@@ -19,17 +20,20 @@ export const CollectionsHeroBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'Floral',
+      localized: true,
     },
     {
       name: 'titleItalic',
       type: 'text',
       label: 'Título (itálica)',
       defaultValue: 'Masterpieces',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'heroImage',
@@ -43,6 +47,7 @@ export const CollectionsHeroBlock: Block = {
       type: 'text',
       label: 'Badge de Origen',
       defaultValue: 'Grown in Ecuador',
+      localized: true,
     },
   ],
 }

@@ -25,6 +25,14 @@ export default buildConfig({
   i18n: {
     fallbackLanguage: 'es',
   },
+  localization: {
+    locales: [
+      { label: 'English', code: 'en' },
+      { label: 'Español', code: 'es' },
+    ],
+    defaultLocale: 'en',
+    fallback: true,
+  },
   admin: {
     user: Users.slug,
     importMap: {

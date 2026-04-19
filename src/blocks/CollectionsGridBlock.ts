@@ -19,6 +19,7 @@ export const CollectionsGridBlock: Block = {
           type: 'text',
           required: true,
           label: 'Título',
+          localized: true,
         },
         {
           name: 'slug',
@@ -30,24 +31,28 @@ export const CollectionsGridBlock: Block = {
           name: 'description',
           type: 'textarea',
           label: 'Descripción',
+          localized: true,
         },
         {
           name: 'ctaText',
           type: 'text',
           label: 'Texto del CTA',
           defaultValue: 'Explore Collection',
+          localized: true,
         },
         {
           name: 'quote',
           type: 'text',
           label: 'Cita',
           admin: { description: 'Opcional — usado por Sunflowers' },
+          localized: true,
         },
         {
           name: 'badge',
           type: 'text',
           label: 'Badge',
           admin: { description: 'Opcional — usado por Tulips' },
+          localized: true,
         },
         {
           name: 'layout',
@@ -83,7 +88,7 @@ export const CollectionsGridBlock: Block = {
           labels: { singular: 'Tag', plural: 'Tags' },
           admin: { description: 'Opcional — usado por Roses' },
           fields: [
-            { name: 'value', type: 'text', required: true, label: 'Valor' },
+            { name: 'value', type: 'text', required: true, label: 'Valor', localized: true },
           ],
         },
         {
@@ -103,7 +108,7 @@ export const CollectionsGridBlock: Block = {
           labels: { singular: 'Color', plural: 'Colores' },
           admin: { description: 'Opcional — usado por Lilies' },
           fields: [
-            { name: 'name', type: 'text', required: true, label: 'Nombre' },
+            { name: 'name', type: 'text', required: true, label: 'Nombre', localized: true },
             { name: 'hex', type: 'text', required: true, label: 'Código Hex' },
           ],
         },

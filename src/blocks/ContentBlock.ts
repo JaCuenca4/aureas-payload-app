@@ -12,6 +12,7 @@ export const ContentBlock: Block = {
       type: 'richText',
       required: true,
       label: 'Contenido',
+      localized: true,
     },
   ],
 }

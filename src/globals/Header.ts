@@ -29,6 +29,7 @@ export const Header: GlobalConfig = {
           type: 'text',
           required: true,
           label: 'Texto',
+          localized: true,
         },
         {
           name: 'url',

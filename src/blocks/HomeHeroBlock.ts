@@ -12,6 +12,7 @@ export const HomeHeroBlock: Block = {
       type: 'text',
       label: 'Badge',
       defaultValue: 'Ecuadorian Excellence',
+      localized: true,
     },
     {
       name: 'title',
@@ -19,6 +20,7 @@ export const HomeHeroBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'Premium Cut Flower Catalog',
+      localized: true,
     },
     {
       name: 'description',
@@ -26,6 +28,7 @@ export const HomeHeroBlock: Block = {
       label: 'Descripción',
       defaultValue:
         'Exportando la biodiversidad y belleza natural de Ecuador a mercados de alto valor desde 2023.',
+      localized: true,
     },
     {
       name: 'heroImage',
@@ -39,6 +42,7 @@ export const HomeHeroBlock: Block = {
       type: 'text',
       label: 'Alt de la Imagen',
       defaultValue: 'Luxury Ecuadorian Roses',
+      localized: true,
     },
     {
       name: 'altitude',
@@ -51,6 +55,7 @@ export const HomeHeroBlock: Block = {
       type: 'text',
       label: 'Altitud (etiqueta)',
       defaultValue: 'Meters Above Sea Level Altitude',
+      localized: true,
     },
     {
       name: 'features',
@@ -60,8 +65,8 @@ export const HomeHeroBlock: Block = {
       minRows: 0,
       maxRows: 6,
       fields: [
-        { name: 'label', type: 'text', required: true, label: 'Etiqueta' },
-        { name: 'text', type: 'text', required: true, label: 'Texto' },
+        { name: 'label', type: 'text', required: true, label: 'Etiqueta', localized: true },
+        { name: 'text', type: 'text', required: true, label: 'Texto', localized: true },
       ],
     },
     {
@@ -69,6 +74,7 @@ export const HomeHeroBlock: Block = {
       type: 'text',
       label: 'CTA — Texto',
       defaultValue: 'Discover the Collection',
+      localized: true,
     },
     {
       name: 'ctaHref',

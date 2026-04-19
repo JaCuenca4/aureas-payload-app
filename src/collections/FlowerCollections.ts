@@ -23,6 +23,7 @@ export const FlowerCollections: CollectionConfig = {
       type: 'text',
       required: true,
       label: 'Nombre',
+      localized: true,
     },
     {
       name: 'slug',
@@ -49,23 +50,27 @@ export const FlowerCollections: CollectionConfig = {
       type: 'text',
       required: true,
       label: 'Hero — Título',
+      localized: true,
       admin: { description: 'Ej: The Rose' },
     },
     {
       name: 'heroTitleItalic',
       type: 'text',
       label: 'Hero — Título (itálica)',
+      localized: true,
       admin: { description: 'Ej: Collection' },
     },
     {
       name: 'heroBadge',
       type: 'text',
       label: 'Hero — Badge',
+      localized: true,
     },
     {
       name: 'heroDescription',
       type: 'textarea',
       label: 'Hero — Descripción',
+      localized: true,
     },
     {
       name: 'heroImage',
@@ -84,10 +89,10 @@ export const FlowerCollections: CollectionConfig = {
       minRows: 1,
       fields: [
         { name: 'number', type: 'text', required: true, label: 'Número', admin: { description: 'Ej: 01' } },
-        { name: 'name', type: 'text', required: true, label: 'Nombre' },
-        { name: 'description', type: 'textarea', required: true, label: 'Descripción' },
+        { name: 'name', type: 'text', required: true, label: 'Nombre', localized: true },
+        { name: 'description', type: 'textarea', required: true, label: 'Descripción', localized: true },
         { name: 'image', type: 'upload', relationTo: 'media', required: true, label: 'Imagen' },
-        { name: 'tag', type: 'text', label: 'Tag' },
+        { name: 'tag', type: 'text', label: 'Tag', localized: true },
         {
           name: 'aspectRatio',
           type: 'select',
@@ -120,8 +125,8 @@ export const FlowerCollections: CollectionConfig = {
       type: 'group',
       label: 'Estándares de Calidad',
       fields: [
-        { name: 'title', type: 'text', required: true, label: 'Título' },
-        { name: 'description', type: 'textarea', required: true, label: 'Descripción' },
+        { name: 'title', type: 'text', required: true, label: 'Título', localized: true },
+        { name: 'description', type: 'textarea', required: true, label: 'Descripción', localized: true },
         { name: 'image', type: 'upload', relationTo: 'media', label: 'Imagen' },
         {
           name: 'specs',
@@ -129,7 +134,7 @@ export const FlowerCollections: CollectionConfig = {
           label: 'Especificaciones',
           labels: { singular: 'Especificación', plural: 'Especificaciones' },
           fields: [
-            { name: 'value', type: 'text', required: true, label: 'Valor' },
+            { name: 'value', type: 'text', required: true, label: 'Valor', localized: true },
           ],
         },
       ],
@@ -142,7 +147,7 @@ export const FlowerCollections: CollectionConfig = {
       label: 'Paleta de Colores',
       labels: { singular: 'Color', plural: 'Colores' },
       fields: [
-        { name: 'name', type: 'text', required: true, label: 'Nombre' },
+        { name: 'name', type: 'text', required: true, label: 'Nombre', localized: true },
         { name: 'hex', type: 'text', required: true, label: 'Código Hex' },
       ],
     },
@@ -153,12 +158,12 @@ export const FlowerCollections: CollectionConfig = {
       type: 'group',
       label: 'Llamada a la Acción',
       fields: [
-        { name: 'title', type: 'text', label: 'Título' },
-        { name: 'titleItalic', type: 'text', label: 'Título (itálica)' },
-        { name: 'titleEnd', type: 'text', label: 'Título (final)' },
-        { name: 'description', type: 'textarea', label: 'Descripción' },
-        { name: 'primaryBtn', type: 'text', label: 'Botón Principal', defaultValue: 'Connect via WhatsApp' },
-        { name: 'secondaryBtn', type: 'text', label: 'Botón Secundario', defaultValue: 'Request Catalog' },
+        { name: 'title', type: 'text', label: 'Título', localized: true },
+        { name: 'titleItalic', type: 'text', label: 'Título (itálica)', localized: true },
+        { name: 'titleEnd', type: 'text', label: 'Título (final)', localized: true },
+        { name: 'description', type: 'textarea', label: 'Descripción', localized: true },
+        { name: 'primaryBtn', type: 'text', label: 'Botón Principal', defaultValue: 'Connect via WhatsApp', localized: true },
+        { name: 'secondaryBtn', type: 'text', label: 'Botón Secundario', defaultValue: 'Request Catalog', localized: true },
       ],
     },
 
@@ -169,8 +174,8 @@ export const FlowerCollections: CollectionConfig = {
       label: 'SEO',
       admin: { position: 'sidebar' },
       fields: [
-        { name: 'title', type: 'text', label: 'Título SEO' },
-        { name: 'description', type: 'textarea', label: 'Descripción SEO' },
+        { name: 'title', type: 'text', label: 'Título SEO', localized: true },
+        { name: 'description', type: 'textarea', label: 'Descripción SEO', localized: true },
       ],
     },
   ],

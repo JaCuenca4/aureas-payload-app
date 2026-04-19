@@ -21,6 +21,7 @@ export const ContactFormBlock: Block = {
           type: 'text',
           required: true,
           label: 'Etiqueta',
+          localized: true,
         },
         {
           name: 'value',

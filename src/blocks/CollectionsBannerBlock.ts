@@ -12,11 +12,13 @@ export const CollectionsBannerBlock: Block = {
       type: 'text',
       label: 'Título',
       defaultValue: 'Nuestras Colecciones',
+      localized: true,
     },
     {
       name: 'subtitle',
       type: 'text',
       label: 'Subtítulo',
+      localized: true,
     },
   ],
 }

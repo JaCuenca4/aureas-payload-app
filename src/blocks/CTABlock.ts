@@ -12,17 +12,20 @@ export const CTABlock: Block = {
       type: 'text',
       required: true,
       label: 'Título',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'buttonLabel',
       type: 'text',
       required: true,
       label: 'Texto del Botón',
+      localized: true,
     },
     {
       name: 'buttonLink',

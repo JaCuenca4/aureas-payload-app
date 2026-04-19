@@ -12,6 +12,7 @@ export const FeaturedProductsBlock: Block = {
       type: 'text',
       required: true,
       label: 'Título',
+      localized: true,
     },
     {
       name: 'products',

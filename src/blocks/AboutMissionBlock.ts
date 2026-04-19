@@ -12,9 +12,9 @@ export const AboutMissionBlock: Block = {
       type: 'group',
       label: 'Visión',
       fields: [
-        { name: 'label', type: 'text', label: 'Etiqueta', defaultValue: 'Our Vision' },
-        { name: 'title', type: 'text', required: true, label: 'Título' },
-        { name: 'description', type: 'textarea', required: true, label: 'Descripción' },
+        { name: 'label', type: 'text', label: 'Etiqueta', defaultValue: 'Our Vision', localized: true },
+        { name: 'title', type: 'text', required: true, label: 'Título', localized: true },
+        { name: 'description', type: 'textarea', required: true, label: 'Descripción', localized: true },
       ],
     },
     {
@@ -22,9 +22,9 @@ export const AboutMissionBlock: Block = {
       type: 'group',
       label: 'Misión',
       fields: [
-        { name: 'label', type: 'text', label: 'Etiqueta', defaultValue: 'Our Mission' },
-        { name: 'title', type: 'text', required: true, label: 'Título' },
-        { name: 'description', type: 'textarea', required: true, label: 'Descripción' },
+        { name: 'label', type: 'text', label: 'Etiqueta', defaultValue: 'Our Mission', localized: true },
+        { name: 'title', type: 'text', required: true, label: 'Título', localized: true },
+        { name: 'description', type: 'textarea', required: true, label: 'Descripción', localized: true },
       ],
     },
   ],

@@ -43,6 +43,7 @@ export const Pages: CollectionConfig = {
       type: 'text',
       required: true,
       label: 'Título',
+      localized: true,
     },
     {
       name: 'slug',
@@ -105,11 +106,13 @@ export const Pages: CollectionConfig = {
           name: 'title',
           type: 'text',
           label: 'Título SEO',
+          localized: true,
         },
         {
           name: 'description',
           type: 'textarea',
           label: 'Descripción SEO',
+          localized: true,
         },
       ],
     },

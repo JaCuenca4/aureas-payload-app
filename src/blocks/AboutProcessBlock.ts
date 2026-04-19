@@ -12,6 +12,7 @@ export const AboutProcessBlock: Block = {
       type: 'text',
       label: 'Badge',
       defaultValue: 'Our Process',
+      localized: true,
     },
     {
       name: 'title',
@@ -19,17 +20,20 @@ export const AboutProcessBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'From Soil to',
+      localized: true,
     },
     {
       name: 'titleItalic',
       type: 'text',
       label: 'Título (itálica)',
       defaultValue: 'Destination',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'steps',
@@ -40,9 +44,9 @@ export const AboutProcessBlock: Block = {
       maxRows: 10,
       fields: [
         { name: 'number', type: 'text', required: true, label: 'Número', admin: { description: 'Ej: 01, 02, 03' } },
-        { name: 'title', type: 'text', required: true, label: 'Título' },
-        { name: 'description', type: 'textarea', required: true, label: 'Descripción' },
-        { name: 'highlight', type: 'text', label: 'Dato Destacado', admin: { description: 'Ej: 2,800m+ Elevation' } },
+        { name: 'title', type: 'text', required: true, label: 'Título', localized: true },
+        { name: 'description', type: 'textarea', required: true, label: 'Descripción', localized: true },
+        { name: 'highlight', type: 'text', label: 'Dato Destacado', admin: { description: 'Ej: 2,800m+ Elevation' }, localized: true },
       ],
     },
   ],

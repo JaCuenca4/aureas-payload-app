@@ -13,17 +13,20 @@ export const BrandStoryBlock: Block = {
       label: 'Título',
       required: true,
       defaultValue: 'Aurea-S — Donde la Elegancia Se Encuentra con el Alma.',
+      localized: true,
     },
     {
       name: 'body',
       type: 'textarea',
       label: 'Texto Principal',
       required: true,
+      localized: true,
     },
     {
       name: 'secondaryText',
       type: 'text',
       label: 'Texto Secundario',
+      localized: true,
     },
     {
       name: 'image',
@@ -36,6 +39,7 @@ export const BrandStoryBlock: Block = {
       type: 'text',
       label: 'Texto del Botón',
       defaultValue: 'DESCUBRIR',
+      localized: true,
     },
     {
       name: 'ctaLink',

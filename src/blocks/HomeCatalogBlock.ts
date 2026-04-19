@@ -13,17 +13,20 @@ export const HomeCatalogBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'Our Botanical',
+      localized: true,
     },
     {
       name: 'titleItalic',
       type: 'text',
       label: 'Título (itálica)',
       defaultValue: 'Selection',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'items',
@@ -38,6 +41,7 @@ export const HomeCatalogBlock: Block = {
           type: 'text',
           required: true,
           label: 'Nombre',
+          localized: true,
         },
         {
           name: 'slug',
@@ -56,6 +60,7 @@ export const HomeCatalogBlock: Block = {
           name: 'varieties',
           type: 'text',
           label: 'Variedades',
+          localized: true,
           admin: {
             description: 'Ej: FREEDOM • EXPLORER • PINK FLOYD',
           },

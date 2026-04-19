@@ -13,24 +13,27 @@ export const AboutCtaBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'Experience Ecuadorian',
+      localized: true,
     },
     {
       name: 'titleItalic',
       type: 'text',
       label: 'Título (itálica)',
       defaultValue: 'Excellence',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'primaryCta',
       type: 'group',
       label: 'CTA Principal',
       fields: [
-        { name: 'text', type: 'text', required: true, label: 'Texto' },
+        { name: 'text', type: 'text', required: true, label: 'Texto', localized: true },
         { name: 'href', type: 'text', required: true, label: 'Enlace' },
       ],
     },
@@ -39,7 +42,7 @@ export const AboutCtaBlock: Block = {
       type: 'group',
       label: 'CTA Secundario',
       fields: [
-        { name: 'text', type: 'text', label: 'Texto' },
+        { name: 'text', type: 'text', label: 'Texto', localized: true },
         { name: 'href', type: 'text', label: 'Enlace' },
       ],
     },

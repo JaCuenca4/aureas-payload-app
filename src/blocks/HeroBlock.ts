@@ -12,11 +12,13 @@ export const HeroBlock: Block = {
       type: 'text',
       required: true,
       label: 'Título',
+      localized: true,
     },
     {
       name: 'subheading',
       type: 'text',
       label: 'Subtítulo',
+      localized: true,
     },
     {
       name: 'image',
@@ -28,6 +30,7 @@ export const HeroBlock: Block = {
       name: 'ctaLabel',
       type: 'text',
       label: 'Texto del Botón',
+      localized: true,
     },
     {
       name: 'ctaLink',

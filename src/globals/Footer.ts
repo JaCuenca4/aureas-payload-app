@@ -24,6 +24,7 @@ export const Footer: GlobalConfig = {
           name: 'description',
           type: 'textarea',
           label: 'Descripción',
+          localized: true,
         },
       ],
     },
@@ -41,6 +42,7 @@ export const Footer: GlobalConfig = {
           type: 'text',
           required: true,
           label: 'Título',
+          localized: true,
         },
         {
           name: 'links',
@@ -56,6 +58,7 @@ export const Footer: GlobalConfig = {
               type: 'text',
               required: true,
               label: 'Texto',
+              localized: true,
             },
             {
               name: 'url',
@@ -69,6 +72,7 @@ export const Footer: GlobalConfig = {
           name: 'text',
           type: 'textarea',
           label: 'Texto',
+          localized: true,
           admin: {
             description: 'Para columnas de solo texto (ej: Headquarters). Usar enlaces O texto, no ambos.',
           },
@@ -79,6 +83,7 @@ export const Footer: GlobalConfig = {
       name: 'copyright',
       type: 'text',
       label: 'Copyright',
+      localized: true,
     },
     {
       name: 'socialLinks',

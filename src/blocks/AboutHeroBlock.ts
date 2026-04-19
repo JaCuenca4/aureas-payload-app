@@ -12,6 +12,7 @@ export const AboutHeroBlock: Block = {
       type: 'text',
       label: 'Badge',
       defaultValue: 'Our Story',
+      localized: true,
     },
     {
       name: 'title',
@@ -19,11 +20,13 @@ export const AboutHeroBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'The Soul of Our Blooms',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'heroImage',

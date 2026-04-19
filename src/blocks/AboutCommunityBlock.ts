@@ -12,6 +12,7 @@ export const AboutCommunityBlock: Block = {
       type: 'text',
       label: 'Badge',
       defaultValue: 'Community & Sustainability',
+      localized: true,
     },
     {
       name: 'title',
@@ -19,17 +20,20 @@ export const AboutCommunityBlock: Block = {
       required: true,
       label: 'Título',
       defaultValue: 'Rooted in',
+      localized: true,
     },
     {
       name: 'titleItalic',
       type: 'text',
       label: 'Título (itálica)',
       defaultValue: 'Community',
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       label: 'Descripción',
+      localized: true,
     },
     {
       name: 'stats',
@@ -38,7 +42,7 @@ export const AboutCommunityBlock: Block = {
       labels: { singular: 'Estadística', plural: 'Estadísticas' },
       fields: [
         { name: 'value', type: 'text', required: true, label: 'Valor', admin: { description: 'Ej: 200+, 100%, 0' } },
-        { name: 'label', type: 'text', required: true, label: 'Etiqueta' },
+        { name: 'label', type: 'text', required: true, label: 'Etiqueta', localized: true },
       ],
     },
     {
@@ -47,8 +51,8 @@ export const AboutCommunityBlock: Block = {
       label: 'Certificaciones',
       labels: { singular: 'Certificación', plural: 'Certificaciones' },
       fields: [
-        { name: 'name', type: 'text', required: true, label: 'Nombre' },
-        { name: 'description', type: 'text', required: true, label: 'Descripción' },
+        { name: 'name', type: 'text', required: true, label: 'Nombre', localized: true },
+        { name: 'description', type: 'text', required: true, label: 'Descripción', localized: true },
       ],
     },
     {
