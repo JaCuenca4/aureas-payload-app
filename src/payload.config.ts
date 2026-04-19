@@ -12,6 +12,7 @@ import { Products } from './collections/Products'
 import { Categories } from './collections/Categories'
 import { Orders } from './collections/Orders'
 import { Pages } from './collections/Pages'
+import { FlowerCollections } from './collections/FlowerCollections'
 
 import { Header } from './globals/Header'
 import { Footer } from './globals/Footer'
@@ -30,7 +31,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Products, Categories, Orders, Pages],
+  collections: [Users, Media, Products, Categories, Orders, Pages, FlowerCollections],
   globals: [Header, Footer, SiteSettings],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

@@ -10,6 +10,24 @@ export const Footer: GlobalConfig = {
   },
   fields: [
     {
+      name: 'brand',
+      type: 'group',
+      label: 'Marca',
+      fields: [
+        {
+          name: 'name',
+          type: 'text',
+          label: 'Nombre',
+          defaultValue: 'Aurea-S',
+        },
+        {
+          name: 'description',
+          type: 'textarea',
+          label: 'Descripción',
+        },
+      ],
+    },
+    {
       name: 'columns',
       type: 'array',
       label: 'Columnas',
@@ -46,6 +64,14 @@ export const Footer: GlobalConfig = {
               label: 'URL',
             },
           ],
+        },
+        {
+          name: 'text',
+          type: 'textarea',
+          label: 'Texto',
+          admin: {
+            description: 'Para columnas de solo texto (ej: Headquarters). Usar enlaces O texto, no ambos.',
+          },
         },
       ],
     },

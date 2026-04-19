@@ -11,6 +11,15 @@ import { BrandStoryBlock } from '../blocks/BrandStoryBlock'
 import { ExperienceBlock } from '../blocks/ExperienceBlock'
 import { ContactHeroBlock } from '../blocks/ContactHeroBlock'
 import { ContactFormBlock } from '../blocks/ContactFormBlock'
+import { HomeCatalogBlock } from '../blocks/HomeCatalogBlock'
+import { HomeContactBlock } from '../blocks/HomeContactBlock'
+import { AboutHeroBlock } from '../blocks/AboutHeroBlock'
+import { AboutMissionBlock } from '../blocks/AboutMissionBlock'
+import { AboutProcessBlock } from '../blocks/AboutProcessBlock'
+import { AboutCommunityBlock } from '../blocks/AboutCommunityBlock'
+import { AboutCtaBlock } from '../blocks/AboutCtaBlock'
+import { CollectionsHeroBlock } from '../blocks/CollectionsHeroBlock'
+import { CollectionsGridBlock } from '../blocks/CollectionsGridBlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -73,6 +82,15 @@ export const Pages: CollectionConfig = {
         ContentBlock,
         FeaturedProductsBlock,
         CTABlock,
+        HomeCatalogBlock,
+        HomeContactBlock,
+        AboutHeroBlock,
+        AboutMissionBlock,
+        AboutProcessBlock,
+        AboutCommunityBlock,
+        AboutCtaBlock,
+        CollectionsHeroBlock,
+        CollectionsGridBlock,
       ],
     },
     {
