@@ -21,6 +21,13 @@ import { SiteSettings } from './globals/SiteSettings'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+const stripSlash = (url?: string) => url?.replace(/\/$/, '') || ''
+
+const PAYLOAD_URL =
+  stripSlash(process.env.NEXT_PUBLIC_SERVER_URL) || 'http://localhost:3001'
+const FRONTEND_URL =
+  stripSlash(process.env.FRONTEND_URL) || 'http://localhost:3000'
+
 export default buildConfig({
   i18n: {
     fallbackLanguage: 'es',
@@ -70,6 +77,7 @@ export default buildConfig({
       },
     }),
   ],
-  cors: [process.env.FRONTEND_URL || 'http://localhost:3000'],
-  serverURL: process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3001',
+  cors: [PAYLOAD_URL, FRONTEND_URL],
+  csrf: [PAYLOAD_URL, FRONTEND_URL],
+  serverURL: PAYLOAD_URL,
 })
